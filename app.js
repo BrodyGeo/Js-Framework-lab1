@@ -11,7 +11,8 @@ app.get(`/`, (request, response) =>
 
 app.get(`/about`, (request, response) =>
 {
-    response.send(`This is our page for lab 1.`);
+    response.send(`This is our page for lab 1.</br>
+        `);
 })
 
 app.get(`/contact`, (request, response) =>
@@ -21,9 +22,10 @@ app.get(`/contact`, (request, response) =>
         Nick - Likes to draw. `);
 })
 
-app.listen(4000, () =>
+const port = process.env.PORT || 4000;
+app.listen(port, () =>
 {
-    //console.log(`Listening on port 4000.`);
+    console.log(`Listening on port ${port}.`);
 });
 
 
