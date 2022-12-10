@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/BrodyGeo/js-blog#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.17.3"
   }
 }
